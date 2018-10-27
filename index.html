@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .hero {
+            position: relative;
+            background: none;
+            color: #616161;
+            text-shadow: 0 0 10px #fff;
+            top: -52px;
+            margin-top: 50px;
+        }
+
+        .hero .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("images/bg_note_coffee.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            overflow: hidden;
+            background-size: cover !important;
+            height: 700px;
+        }
+
+        .hero .bg::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(248, 248, 248, 0.7);
+        }
+
+        .hero .get-it {
+            text-align: center;
+            margin-top: 0px;
+            margin-top: 17vh;
+        }
+
+        #learn-more {
+            position: relative;
+            top: -30px;
+        }
+
+        .hero .get-it h1,
+        .hero .get-it p {
+            margin-bottom: 40px;
+        }
+
+        .hero .get-it p {
+            color: #505050;
+        }
+
+        .hero .get-it h1 {
+            color: #6891a2 !important;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #da4e43;
+            border-color: #d63a2e;
+            width: 100px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        .btn-primary:focus,
+        .btn-primary.focus {
+            color: #fff;
+            background-color: #c43226;
+            border-color: #6e1c16;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #c43226;
+            border-color: #a62a21;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #more {
+            text-align: center;
+            margin-top: 180px;
+        }
+
+        .navbar-default .navbar-nav>.active>a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #da4e43;
+            position: relative;
+            top: 3px;
+            margin-left: -5px;
+            margin-right: -5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            box-sizing: content-box;
+            max-width: 85px;
+            margin-bottom: -2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link" href="index.html">Recently</a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navcol-1" aria-expanded="true">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse in" id="navcol-1" aria-expanded="true" style>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation" class="active"><a href="#" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                        <li role="presentation" class=""><a href="#" aria-controls="home" role="tab" data-toggle="tab">Publish</a></li>
+                     
+                        <li role="presentation" class="dropdown" >
+                                <a href="Login.html" class="dropdown-toggle"  aria-controls="home" role="tab" data-toggle="tab dropdown">Login</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li>
+                                        <a href="Login.html">Register</a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main-layout" class="layout no-sidebar">
+            <div id="wrapper">
+                <div id="page-content-wrapper">
+                    <div class="jumbotron hero">
+                        <div id="jumbo-bg" class="bg">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-10 col-lg-push-1 get-it">
+                                <h1 style="height: 70">Recently</h1>
+                                <h2 class="small">Share recent developments and make plans</h2>
+                                <p>Easy to use documentation platform and knowledge base with real-time collaborative editing.</p>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="testnow-card signup-btn btn btn-primary btn-block btn-lg btn-signin">
+                                    Try Now
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 scroll-down-container" id="more">
+                                <a href="#learn-more">
+                                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
+                                    <h2 class="small">
+                                        <span class="caret"></span>Learn More</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

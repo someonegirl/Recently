@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .hero {
+            position: relative;
+            background: none;
+            color: #616161;
+            text-shadow: 0 0 10px #fff;
+            top: -52px;
+            margin-top: 50px;
+        }
+
+        .hero .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("images/bg_note_coffee.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            overflow: hidden;
+            background-size: cover !important;
+            height: 700px;
+        }
+
+        .hero .bg::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(248, 248, 248, 0.7);
+        }
+
+        .hero .get-it {
+            text-align: center;
+            margin-top: 0px;
+            margin-top: 17vh;
+        }
+
+        #learn-more {
+            position: relative;
+            top: -30px;
+        }
+
+        .hero .get-it h1,
+        .hero .get-it p {
+            margin-bottom: 40px;
+        }
+
+        .hero .get-it p {
+            color: #505050;
+        }
+
+        .hero .get-it h1 {
+            color: #6891a2 !important;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #da4e43;
+            border-color: #d63a2e;
+            width: 100px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        .btn-primary:focus,
+        .btn-primary.focus {
+            color: #fff;
+            background-color: #c43226;
+            border-color: #6e1c16;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #c43226;
+            border-color: #a62a21;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #more {
+            text-align: center;
+            margin-top: 180px;
+        }
+
+        .sign-card {
+            max-width: 350px;
+            padding: 40px 40px;
+            margin: 0 auto 25px;
+            margin-top: 50px;
+            border-radius: 2px;
+            background: rgba(248, 248, 248, 0.7);
+            box-shadow: rgba(0, 0, 0, 0.0784314) 1px 3px 1px;
+            border: 1px solid #dbe3e7;
+        }
+
+        .sign-card .profile-img-card {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 10px;
+            display: block;
+            border-radius: 50%;
+        }
+
+        .sign-card .profile-name-card {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0 0;
+            min-height: 1em;
+        }
+
+        .sign-card .reauth-email {
+            display: block;
+            color: #404040;
+            line-height: 2;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .sign-card .form-sign input[type=email],
+        .sign-card .form-sign input[type=password],
+        .sign-card .form-sign input[type=text],
+        .sign-card .form-sign button {
+            height: 44px;
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+            z-index: 1;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .sign-card .form-sign input {
+            padding: 0 10px;
+        }
+
+        .sign-card label {
+            color: #000000;
+        }
+
+        #signup_form h3 {
+            margin-bottom: 10px;
+        }
+
+        #signup_form .test-now-leadingtext {
+            margin-bottom: 10px;
+        }
+
+        .sign-card .forgot-password {
+            color: #6891a2;
+        }
+
+        .sign-card .forgot-password:hover,
+        .sign-card .forgot-password:active,
+        .sign-card .forgot-password:focus {
+            color: #0c6121;
+        }
+
+        .sign-card .form-sign .form-control:focus {
+            border-color: #6891a2;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #6891a2;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #6891a2;
+        }
+
+        .sign-card .btn.btn-signin {
+            font-weight: 700;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            border-radius: 3px;
+            border: none;
+            transition: all 0.218s;
+            padding: 0;
+        }
+
+        .navbar-default .navbar-nav>.active>a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #da4e43;
+            position: relative;
+            top: 3px;
+            margin-left: -5px;
+            margin-right: -5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            box-sizing: content-box;
+            max-width: 85px;
+            margin-bottom: -2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link" href="index.html">Recently</a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navcol-1" aria-expanded="true">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse in" id="navcol-1" aria-expanded="true" style>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation">
+                            <a href="index.html" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#" aria-controls="home" role="tab" data-toggle="tab">Publish</a>
+                        </li>
+
+                        <li role="presentation" class="dropdown active">
+                            <a href="Login.html" class="dropdown-toggle" aria-controls="home" role="tab" data-toggle="tab dropdown">Login</a>
+                            <ul class="dropdown-menu submenu">
+                                <li>
+                                    <a href="Login.html">Register</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main-layout" class="layout no-sidebar">
+            <div id="wrapper">
+                <div id="page-content-wrapper">
+                    <div class="jumbotron hero">
+                        <div id="jumbo-bg" class="bg">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sign-card" id="signup_form">
+                                        <h3>Sign in</h3>
+                                        <form class="form-sign" method="POST">
+                                            <input class="form-control" type="text" required name="email" placeholder="email">
+                                            <input class="form-control" type="password" name="password" required placeholder="password" id="inputPassword">
+                                            <button id="signin-btn" class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign in</button>
+                                            <a class="forgot-password-link small" href="#">Forget password</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
