@@ -1,0 +1,14 @@
+.gray-background{
+  background: #f2f2f2;
+}
+.fixed{
+  position: fixed;
+}
+.userMsgRow{
+  margin-top:10%;
+  text-align: center;
+}
+.hidden{
+  overflow: hidden;
+  
+}

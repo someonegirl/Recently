@@ -1,0 +1,123 @@
+<html>
+
+<head>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/good.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://teamemo.com/static/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://teamemo.com/static/styles/landingpage-cf092c3767.css">
+  <script src="../js/jquery-1.11.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+
+  <link href="../css/good.css" rel="stylesheet">
+  <title>Subfield</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class=".container-fluid ">
+    <div class="container">
+      <h2 class="text-center">My task
+        <button id="eitortask" type="button" class="btn btn-default" aria-label="Left Align">
+          <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+        </button></h2>
+      <div class="row feature-row center-block text-center">
+        <div class=".col-md-6 .col-md-offset-3" id="taskcontent">
+          <ul id="tasklist">
+            <li>我的第一个任务是</li>
+            <li>我的第二个任务是</li>
+            <li>我的第三个任务是</li>
+            <li>我的第四个任务是</li>
+          </ul>
+        </div>
+        <div class=".col-md-6 .col-md-offset-3" id="summernote"></div>
+        <button type="button" class="btn btn-default btn-sm" id="btnpush">Publish</button>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        //隐藏
+        function toggletask() {
+          $("#btnpush").toggle(100);
+          $("#summernote").next().toggle(100);
+          $("#taskcontent").toggle(100);
+        }
+        //运行summernote
+        function eitoropen() {
+          $('#summernote').summernote({
+            height: 200,
+            lang: 'zh-CN', //设置中文，需引入中文插件summernote-zh-CN.js
+
+            toolbar: [
+
+
+              ['style', ['bold', 'italic', 'underline', 'clear']], // 字体粗体、字体斜体、字体下划线、字体格式清除       
+              ['font', ['strikethrough', 'superscript', 'subscript']], //字体划线、字体上标、字体下标   
+              ['fontsize', ['fontsize']], //字体大小                                
+              ['color', ['color']], //字体颜色
+
+
+
+              ['para', ['ul', 'ol', 'paragraph']], //无序列表、有序列表、段落对齐方式
+              ['height', ['height']], //行高
+
+
+
+              ['hr', ['hr']], //插入水平线                
+              ['link', ['link']], //插入链接                
+
+              ['undo', ['undo']], //撤销
+              ['redo', ['redo']], //取消撤销
+              ['help', ['help']], //帮助
+            ],
+          });
+
+        }
+        eitoropen();
+        $("#summernote").next().toggle(100);
+        $("#btnpush").hide();
+        $('#eitortask').click(function () {
+          var htmlcontent = $('#taskcontent').html();
+          $('#summernote').summernote('code', htmlcontent)
+
+          toggletask();
+        });
+        $('#btnpush').click(function () {
+          var htmlcontent = $('#summernote').summernote('code');
+          $("#taskcontent").html(htmlcontent);
+
+          toggletask();
+        });
+      });
+    </script>
+    <div class="gray-background">
+      <div class="container">
+        <div class="row feature-row">
+          <div class="col-md-6 col-md-push-6 image"><img class="outdent-shadow image-responsive stopped" src="https://teamemo.com/static/animations/type.gif"
+              width="100%"></div>
+          <div class="col-md-6 col-md-pull-6 text">
+            <h2>First class teamwork</h2>
+            <h3>With realtime-synchronisation</h3>
+            <div>
+              <p>Write in parallel on one document.</p>
+              <p>The written text will be synced in real time with your team members. Ideal for creative processes like
+                meetings, brainstorming or project planning.</p>
+              <p>Working together was never so easy and creative.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
