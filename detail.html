@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/someone.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .A1 {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            z-index: 1;
+        }
+
+        #A1-1 {
+            background: url("images/bg_note_coffee.jpg") 50% 50% no-repeat;
+            position: absolute;
+            background-size: cover;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            height: 300px;
+        }
+
+        #A1-2 {
+            background-color: #101613;
+            opacity: 0.5;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            height: 300px;
+        }
+
+        #trame {
+            background: url("images/trame.svg") repeat;
+            position: absolute;
+            width: 100;
+            height: 100;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            opacity: 0.8;
+            height: 300px;
+        }
+
+        div {
+            display: block;
+        }
+
+        #text-2 {
+            width: 550px;
+            left: 0%;
+            position: relative;
+            background-color: transparent;
+            margin: 0 auto;
+            height: auto;
+            top: 50px;
+            z-index: 3;
+            text-align: center;
+            font-size: 40px;
+            line-height: 150%;
+            color: #444549;
+            font-family: 'opensans-regular-webfont';
+            letter-spacing: -1px;
+            padding-top: 100px;
+        }
+
+        #wrapper-A2-date-1 {
+            position: relative;
+            width: 130px;
+            height: 40px;
+            z-index: 1;
+            margin: 0 auto;
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+
+        #A2-date-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: right;
+            font-size: 15px;
+            line-height: 160%;
+            color: #c6c6c6;
+            font-family: 'opensans-bold-webfont';
+        }
+
+        #A2-icone-1 {
+            position: absolute;
+            background-image: url("images/icone1.svg");
+            background-repeat: no-repeat;
+            width: 27px;
+            height: 18px;
+            left: 0;
+            top: 50%;
+            margin-top: 45px;
+        }
+
+        .A3 {
+            position: relative;
+            width: 600px;
+            z-index: 1;
+            margin: 0 auto;
+            margin-top: 100px;
+            height: auto;
+            overflow-x: hidden;
+            transition: all 0.25s ease-in-out;
+            -webkit-transition: all 0.25s ease-in-out;
+        }
+
+        #A3-top {
+            position: relative;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            margin-bottom: 100px;
+        }
+
+        #A3-image {
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .A3-top-2 {
+            position: relative;
+            width: 100;
+            position: relative;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            padding: 50px 10px 40px 10px;
+            left: 0;
+        }
+
+        #A3-text-1 {
+            position: relative;
+            text-align: left;
+            font-size: 16px;
+            line-height: 170%;
+            left: 0;
+            color: #474851;
+            font-family: 'opensans-regular-webfont';
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+
+
+
+        #linetop {
+            position: absolute;
+            background-color: #ccc;
+            height: 1px;
+            top: 0;
+            width: 100%;
+        }
+
+        #linebottom {
+            position: absolute;
+            background-color: #ccc;
+            height: 1px;
+            top: 0;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #previousPage {
+            text-align: left;
+            font-size: 16px;
+            height: 0;
+            color: #474851;
+            font-family: 'opensans-regular-webfont';
+            top: 50%;
+            margin-top: -10px;
+        }
+        .A5{
+            position: relative;
+    width: 100%;
+    z-index: 1;
+    height: auto;
+    padding-top: 50px;
+    background-color: #444549;
+    position: relative;
+    width: 1000px;
+    z-index: 1;
+    left: 50%;
+    margin-left: -500px;
+    height: auto;
+    padding-top: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link" href="index.html">Recently</a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navcol-1" aria-expanded="true">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse in" id="navcol-1" aria-expanded="true" style>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation">
+                            <a href="index.html" aria-controls="home" role="tab">Home</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="publish.html" aria-controls="home" role="tab">Publish</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="share.html" aria-controls="home" role="tab">Share</a>
+                        </li>
+                        <li role="presentation" class="dropdown active">
+                            <a href="Login.html" class="dropdown-toggle" aria-controls="home" role="tab" data-toggle="tab dropdown">Login</a>
+                            <ul class="dropdown-menu submenu">
+                                <li>
+                                    <a href="Login.html">Register</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main-layout" class="layout no-sidebar">
+            <div id="wrapper">
+
+                <div class="A1">
+                    <div id="A1-1"></div>
+                    <div id="A1-2"></div>
+                    <div id="trame"></div>
+                </div>
+                <div class="A2" style="opacity: 1;">
+                    <div id="text-2">Post an image with animation</div>
+                    <div id="wrapper-A2-date-1">
+                        <div id="A2-date-1">28 oct ,2018</div>
+                        <div id="A2-icone-1"></div>
+                    </div>
+
+                </div>
+                <div class="A3">
+                    <div class="A3-top">
+                        <div class="A3-image">
+                            <img src="images/image1-01.jpg" alt="post an image with animation" title="post an image with animation">
+                        </div>
+
+                    </div>
+                    <div class="A3-top-2">
+                        <div id="A3-text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                </div>
+                <div class="A4">
+                    <div id="linetop"></div>
+                    <div id="linebottom"></div>
+                    <ul>
+                        <li>
+                            <div id="previousPage">
+                                <a href="#">« Previous page</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="nextPage">
+                                <a href="#">Next page »</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="A5">
+                    <div id="A5-left">
+                            <div id="left-A5b-text-post">14</div>
+                            <div id="left-A5b-line-post"></div>
+                            <div id="left-A5b-line2-post"></div>
+                            <div id="left-A5b-text-post-1"><strong>Posts</strong></div>
+                    </div>
+                    <div id="A5-mid">
+                            <div id="A5b-middle" class="wow flipInX animated" data-wow-offset="10" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: flipInX;">
+                                <div id="mid-A5b-text-post">235</div>
+                                <div id="mid-A5b-line-post"></div>
+                                <div id="mid-A5b-line2-post"></div>
+                                <div id="mid-A5b-text-post-1"><strong>Likes</strong></div>
+                            </div>
+                        </div>
+                </div>
+                <div id="A5-right">
+                        <div id="A5b-right" class="wow flipInX animated" data-wow-offset="10" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: flipInX;">
+                            <div id="right-A5b-text-post">6509</div>
+                            <div id="right-A5b-line-post"></div>
+                            <div id="right-A5b-line2-post"></div>
+                            <div id="right-A5b-text-post-1"><strong>Views</strong></div>
+                       </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
