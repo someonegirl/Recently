@@ -1,6 +1,10 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
     <link href="css/bootstrap.min.css" rel="stylesheet">
    
     <link href="css/good.css" rel="stylesheet">
@@ -10,9 +14,6 @@
     <script src="js/bootstrap.min.js"></script>
  
   
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link href="css/someone.css" rel="stylesheet">
   <link href="css/good.css" rel="stylesheet">
@@ -33,12 +34,13 @@
       cursor: pointer;
       color:#999;
     }
+    
   </style>
 </head>
 
 <body>
   <div class=".container-fluid ">
-      <div class="navbar navbar-default headerTopBack" >
+      <div class="navbar navbar-default navbar-fixed-top" >
           <div class="container">
               <div class="navbar-header">
                   <a class="navbar-brand navbar-link" href="index.html">Recently</a>
@@ -50,20 +52,26 @@
                   </button>
               </div>
               <div class="navbar-collapse collapse in" id="navcol-1" aria-expanded="true" style>
-                  <ul class="nav navbar-nav navbar-right">
-                      <li role="presentation" class=""><a href="index.html" aria-controls="home" role="tab" >Home</a></li>
-                      <li role="presentation" class=""><a href="publish.html" aria-controls="publish" role="tab">Publish</a></li>
-                      <li role="presentation" class="active"><a href="share.html" aria-controls="share" role="tab" >Share</a></li>
-                      <li role="presentation" class="dropdown">
-                          <a href="Login.html" class="dropdown-toggle" aria-controls="login" role="tab" data-toggle="tab dropdown">Login</a>
-                          <ul class="dropdown-menu submenu">
-                              <li>
-                                  <a href="Login.html">Register</a>
-                              </li>
-                          </ul>
-                      </li>
-                  </ul>
-              </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation">
+                        <a href="index.html" aria-controls="home" role="tab">Home</a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="publish.html" aria-controls="home" role="tab">Publish</a>
+                    </li>
+                    <li role="presentation" class="active">
+                        <a href="share.html" aria-controls="home" role="tab" >Share</a>
+                    </li>
+                    <li role="presentation" class="dropdown ">
+                        <a href="Login.html" class="dropdown-toggle" aria-controls="home" role="tab" data-toggle="tab dropdown">Login</a>
+                        <ul class="dropdown-menu submenu">
+                            <li>
+                                <a href="Login.html">Register</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
           </div>
       </div>
     <div class="center">
