@@ -61,7 +61,7 @@
         }
 
         div {
-            background: inherit;
+            display: block;
         }
 
         #text-2 {
@@ -199,20 +199,15 @@
             top: 50%;
             margin-top: -10px;
         }
-        .A5{
+
+        .A5 {
             position: relative;
-    width: 100%;
-    z-index: 1;
-    height: auto;
-    padding-top: 50px;
-    background-color: #444549;
-    position: relative;
-    width: 1000px;
-    z-index: 1;
-    left: 50%;
-    margin-left: -500px;
-    height: auto;
-    padding-top: 20px
+            width: 100%;
+            z-index: 1;
+            height: auto;
+            padding-top: 50px;
+            background-color: #444549;
+
         }
     </style>
 </head>
@@ -302,28 +297,34 @@
                 </div>
                 <div class="A5">
                     <div id="A5-left">
-                            <div id="left-A5b-text-post">14</div>
-                            <div id="left-A5b-line-post"></div>
-                            <div id="left-A5b-line2-post"></div>
-                            <div id="left-A5b-text-post-1"><strong>Posts</strong></div>
+                        <div id="left-A5b-text-post">14</div>
+                        <div id="left-A5b-line-post"></div>
+                        <div id="left-A5b-line2-post"></div>
+                        <div id="left-A5b-text-post-1">
+                            <strong>Posts</strong>
+                        </div>
                     </div>
                     <div id="A5-mid">
-                            <div id="A5b-middle" class="wow flipInX animated" data-wow-offset="10" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: flipInX;">
-                                <div id="mid-A5b-text-post">235</div>
-                                <div id="mid-A5b-line-post"></div>
-                                <div id="mid-A5b-line2-post"></div>
-                                <div id="mid-A5b-text-post-1"><strong>Likes</strong></div>
+                        <div id="A5b-middle" class="wow flipInX animated" data-wow-offset="10" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: flipInX;">
+                            <div id="mid-A5b-text-post">235</div>
+                            <div id="mid-A5b-line-post"></div>
+                            <div id="mid-A5b-line2-post"></div>
+                            <div id="mid-A5b-text-post-1">
+                                <strong>Likes</strong>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div id="A5-right">
-                        <div id="A5b-right" class="wow flipInX animated" data-wow-offset="10" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: flipInX;">
-                            <div id="right-A5b-text-post">6509</div>
-                            <div id="right-A5b-line-post"></div>
-                            <div id="right-A5b-line2-post"></div>
-                            <div id="right-A5b-text-post-1"><strong>Views</strong></div>
-                       </div>
+                    <div id="A5b-right" class="wow flipInX animated" data-wow-offset="10" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: flipInX;">
+                        <div id="right-A5b-text-post">6509</div>
+                        <div id="right-A5b-line-post"></div>
+                        <div id="right-A5b-line2-post"></div>
+                        <div id="right-A5b-text-post-1">
+                            <strong>Views</strong>
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
 
