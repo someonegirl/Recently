@@ -24,16 +24,15 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
 
     <!-- 这里是summernote的必要文件-->
-
+    <!--自定义的css-->
     <link href="css/good.css" rel="stylesheet">
-
-    
-    <link  href="css/someone.css" rel="stylesheet">
+    <link href="css/someone.css" rel="stylesheet">
+      <!--自定义的css-->
 </head>
 
 <body>
     <div>
-        <div class="navbar navbar-default navbar-fixed-top headerTopBack" >
+        <div class="navbar navbar-default navbar-fixed-top headerTopBack">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand navbar-link" href="index.html">Recently</a>
@@ -46,9 +45,9 @@
                 </div>
                 <div class="navbar-collapse collapse in" id="navcol-1" aria-expanded="true" style>
                     <ul class="nav navbar-nav navbar-right">
-                        <li role="presentation" class="active"><a href="#" aria-controls="home" role="tab" >Home</a></li>
+                        <li role="presentation" class="active"><a href="#" aria-controls="home" role="tab">Home</a></li>
                         <li role="presentation" class=""><a href="publish.html" aria-controls="publish" role="tab">Publish</a></li>
-                        <li role="presentation" class=""><a href="share.html" aria-controls="share" role="tab" >Share</a></li>
+                        <li role="presentation" class=""><a href="share.html" aria-controls="share" role="tab">Share</a></li>
                         <li role="presentation" class="dropdown">
                             <a href="Login.html" class="dropdown-toggle" aria-controls="login" role="tab" data-toggle="tab dropdown">Login</a>
                             <ul class="dropdown-menu submenu">
@@ -102,31 +101,43 @@
                     </button></h2>
                 <div class="row feature-row center-block text-center">
                     <div class=".col-md-6 .col-md-offset-3" id="taskcontent">
-                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.&nbsp; 这里是用来记录我当前需要完成的任务</span></p>
-                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.</span><span style="font-size: 18px;">&nbsp;</span><span
-                            style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">点击上方</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAA6CAYAAAAJO/8DAAAEAklEQVRoBe2bS04bQRCGy8aAecqSlyDv2URZJwdgZy7AMuuEC4QFuUDIGmWVC4RdDpCsvLI4ABISO0sIgcDm4ejv5LeK0vTMENvtmdAtjfox3T31f1M1NFK5MhwOhxLLiEB11IoNRyACMY4QgRggNdPP1S3bZ6dSqeTShUm5gRCCrbEJx3I/dcoTNQC0YR/HWPtMyAUEG+J6fHx8UnPct/ksxyGcV7VadW3UKGlQMoEQBGDc39/Lw8PDqCagWQr3PRuiAWBubk5qtdqoxhgBJa1NBUIYgHB3dye9Xk8uLy9lMBgULkysOAABiHq9Lmtra7K4uOiu+fl5N9UHxQuE4QAvAIzz83MHYnNzU9bX1x1la0SR+rAbL+/s7Exub2+l0Wi4kIeNDCW2td1eIJjEMIFnwCu2trYKD4Li4AGAgJd3cnIiFxcX7pYOGYSTLd5zCD0E4QLSGxsbpYGhRQJAq9VyXn59fS39ft99B6lPz0XbCwQ36SHwDpAua6HtCB1owR8HaEsqiUBIDzU8BDVIl7XQdsDA95CaqFPrSlWZtEAvLlubnpGmywuEi3yuVTYYsBeaoAcX9VkdXiB24v/QB4SsEoEYQi8KiNGe2E09mCWu+KfBnnx/vy2ffqUv3j3qyN7r9DnTvhvEQ3rHB5kwIPTbu8/SnbbijP2DAMmwoVC3gwBptvfl45ts3btHe/Iqe9pUZwT6hjRl50tHdqYqZTKbBwHSO/4g2wc/x7B4V752wnhPkJAZg0TwpRGIQR4kZJrtQ+m0zZML2g0CRCTfwUwzmtUhLUjI5D2YaSCzOqQFAaKFFr0dBEjeg5mGNatDWqBvSDyY6Zct4x/M/mz3dv+HHLabT/aedCdIyEza6GnuF4EYukG+IWU6mEUPMR4SgUQghoDpRg+JQAwB040eEoEYAqb7ojwkLfuQXCIQkvhbe4EwMQ3JJmiXOS2CtkMH9FBTksd4gQAYoSC9EXlmZS2wHVlD0JEGA/oSgRAEamTqIdcT6Y0kXSYwsPn09NQl2y0sLAjyVKFJa9R6EoFwAmiCKhJfkWzC9MYygIGNSMXsdrtydXU1SuIFFHoKdeq64vtFFQDAzZCkdnNz4zbFA9AvS4H9SMPkS0U24urqqiwtLT3xFK0n9d9/egjSoukVyPXU6Y06VytPypJ++KTbCAMUhgNAAABCfmVlRZaXl116d5qHeIFwc0DR+eFoM70RkAhq0uLG3Q9203aEic51xzih2ed4gZA0Fus2NuevIgBj1l5hBbEPwbD9ub+G8H5DuDFqhgUBsOa4nluUNj2AYHSNtq/kAoLF9ARb63u+h4Qe14LZtrXPptxA9AaEoseK3CaMPDamfkN8GzznAb49ijr+G0XZAW5VBZxIAAAAAElFTkSuQmCC"
-                            data-filename="image.png" style="width: 42.4px; height: 36.1647px;"><span style="font-size: 18px;">可以点开编辑器。</span></p>
-                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.</span><span style="font-size: 18px;">&nbsp;</span><span
-                            style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">点击下方的</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAA0CAYAAACuPJf7AAAFnElEQVR4Ae2cO0zjSBjH/+EtXuIhIdEl1JGu4iSnurs6K/pQrK6ItMWmWTqol45rQrES1RakuG5F6turiHRUK6UEkgYh8RAUvJ+rv7NfYudi8vCYteOxNJrxeMb+vv9vXk5sR56fn5+ht65WoKervdPOmQpoyCFoCBpyCCD3vaaPevp3VjsSiTgfdHnEc8gEK3Alps3WtEsfAlvdClbSjCWtyjHPIAtcxk9PTyZUiTXgGj6B2tPTY8KVWPJrJTtPeQJZABPq4+MjHh4ezMA08xj0VlGAUBl6e3vR19dnBqaZx01Fr/YMMkES7snJCY6Pj3F9fa25OigwMDCA8fFxTExMYHBw0AwELr3aoVrL2cohSy9mryXgg4MDxGIx0wEVrbJlzwJSkHqdn59jf38f9/f3mJqaMi2X4ZrH3eqm/BaKRkkvZg8m4MnJSdeGBoRZ22YSIPWZm5vDxcUFLi8vcXt7a46C1JF6ut2UQ6ZBNIxDNYdoDkF6a64AdeLod3V1VYWsAjCvrBQyjWJgC6TB3NwONc3l6Y4SotPNzY05bMsiVTR146VSyGKIgJZ9HbeugNyJqBqqeWXlkKXlMdZb+woIXJU6KocsbmnIokR7sUq4cmXPIMsFdNyeAl50Dg25PQaBLK0hBxJbe0ZryO3pFcjSPoV8iq0PBgyjUVjC1lHrWhfXDRjrRccKp/klGB+2cGqWKCJrGMh+cyxeO3C0hSWjPVtqlV83pfy3a5XmJ1byWEtO205JKMmFLGKFDOK2Iyp24sgUCipO5Ktz+LQnO2s0nfwTKeTwtZXe5nyaUB0JHGQ7nUbDa6O8kn34dxy+6+tW9mvTRhb/G/j/y1qmFX8O34GDXFxPI4cUfv/FjvvFvc1VlN8WUCgwbCC1mcZSvjILO9fjuiCN8kr+R70CNhZzSNsayDZW/4kib563gPwKsLrQoCE4X+RVjvh6Tt7+mITxsV6HFDbanY8XN5CpNoo4Mp9SMN7lUExmMFt/+ur+Icqcnv+oZiD+voD6GTv19g1k1TD9629I4F+UjoD4TK3ez075GnKjhVcngiWidShno1UYdUcsp48jtZJAstrQGjWuBOpPbTmBb5KBG65fU7np5FptiEcOafOWzn/DcTNNug/yUQnlOq+3y4f2nMMythFFrOUhtXJrZc7nAVzZBxzyLKIGkPssP2YAxb9XsW1HCmymLT9wFJF9l0NiJdXkPruysrYt0L59bX/RV2/LT9j39ZzcXI9pvPlrA2UjjaSxahZPfaqsnm11F5cR/WzA+LFqam2ujyPzZRlLC9bFXwLLX9aaNA7blX2xE1H56ir/JuNjK3d3d+ZDabu7u5ifn/eFo0EwYmdnx3w2bmZmxnxqc3R0FHxcl89hy+NBnfgR8OG6E5fDV0dDDgFzDVlDDoECIXBR92QNOQQKhMBF3ZM15BAo4DMX3dwPO7niWU/2wlgnJ7opn7pJUOWXcshioED24mFxVc776Tyik7x4Xq+jG1uVQ6YxNJDG8ic5vmCtt+YKUCeClk9KCOzmNZuXUApZWh8N5O+t/EQC36A/OztT8jJ1c3eCV4Jgqc/e3p75u//Q0BD6+/tN/QS0jIqdeufJv1A0ii2SL1bzEwmlUqn6vnKnhnZzPYLmHzsjIyMYHh6ufjPELVzRTDlkGsYWSMj8yAm/gcGYb9DzBWu+fyuvZ9IImYvEoDDEAk+0Ys8dGxszARM09fL1h2FoOAOHaxrLTdLs1QI5DDBb8VE6BEFTLwny96I0iFbO5VRG6f/JchH2Tgb5rIS8PS+fSGC+3ioKEDIDocqii2nmSYdxq5UnkGmUgBbY1phpvVUUEJACVWLJV6GTZ5DFOIHNfStca1rKhi22DsWSVglX9PQcslyIsQZrVcOeFsj2XDV7ylfXL5nlpSMvXTfsx74DUgJ74Cn8chkAAAAASUVORK5CYII="
-                            data-filename="image.png" style="width: 64.4px; height: 27.676px;"><span style="font-size: 18px;">可以记录当前的任务。</span></p>
-                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp;4.</span><span style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">&nbsp;</span><span
-                            style="font-size: 18px;">当然你也可以附带上一个</span><a href="http://#" target="_blank" style="font-size: 18px; background-color: rgb(255, 255, 255);">链接</a><span
-                            style="font-size: 18px;">，</span><span style="font-size: 18px; background-color: rgb(239, 239, 239);">而且你也可以修改这个的颜色用来让你的任务栏更好看。</span></p>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.&nbsp;
+                                这里是用来记录我当前需要完成的任务</span></p>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.</span><span style="font-size: 18px;">&nbsp;</span><span
+                                style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">点击上方</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAA6CAYAAAAJO/8DAAAEAklEQVRoBe2bS04bQRCGy8aAecqSlyDv2URZJwdgZy7AMuuEC4QFuUDIGmWVC4RdDpCsvLI4ABISO0sIgcDm4ejv5LeK0vTMENvtmdAtjfox3T31f1M1NFK5MhwOhxLLiEB11IoNRyACMY4QgRggNdPP1S3bZ6dSqeTShUm5gRCCrbEJx3I/dcoTNQC0YR/HWPtMyAUEG+J6fHx8UnPct/ksxyGcV7VadW3UKGlQMoEQBGDc39/Lw8PDqCagWQr3PRuiAWBubk5qtdqoxhgBJa1NBUIYgHB3dye9Xk8uLy9lMBgULkysOAABiHq9Lmtra7K4uOiu+fl5N9UHxQuE4QAvAIzz83MHYnNzU9bX1x1la0SR+rAbL+/s7Exub2+l0Wi4kIeNDCW2td1eIJjEMIFnwCu2trYKD4Li4AGAgJd3cnIiFxcX7pYOGYSTLd5zCD0E4QLSGxsbpYGhRQJAq9VyXn59fS39ft99B6lPz0XbCwQ36SHwDpAua6HtCB1owR8HaEsqiUBIDzU8BDVIl7XQdsDA95CaqFPrSlWZtEAvLlubnpGmywuEi3yuVTYYsBeaoAcX9VkdXiB24v/QB4SsEoEYQi8KiNGe2E09mCWu+KfBnnx/vy2ffqUv3j3qyN7r9DnTvhvEQ3rHB5kwIPTbu8/SnbbijP2DAMmwoVC3gwBptvfl45ts3btHe/Iqe9pUZwT6hjRl50tHdqYqZTKbBwHSO/4g2wc/x7B4V752wnhPkJAZg0TwpRGIQR4kZJrtQ+m0zZML2g0CRCTfwUwzmtUhLUjI5D2YaSCzOqQFAaKFFr0dBEjeg5mGNatDWqBvSDyY6Zct4x/M/mz3dv+HHLabT/aedCdIyEza6GnuF4EYukG+IWU6mEUPMR4SgUQghoDpRg+JQAwB040eEoEYAqb7ojwkLfuQXCIQkvhbe4EwMQ3JJmiXOS2CtkMH9FBTksd4gQAYoSC9EXlmZS2wHVlD0JEGA/oSgRAEamTqIdcT6Y0kXSYwsPn09NQl2y0sLAjyVKFJa9R6EoFwAmiCKhJfkWzC9MYygIGNSMXsdrtydXU1SuIFFHoKdeq64vtFFQDAzZCkdnNz4zbFA9AvS4H9SMPkS0U24urqqiwtLT3xFK0n9d9/egjSoukVyPXU6Y06VytPypJ++KTbCAMUhgNAAABCfmVlRZaXl116d5qHeIFwc0DR+eFoM70RkAhq0uLG3Q9203aEic51xzih2ed4gZA0Fus2NuevIgBj1l5hBbEPwbD9ub+G8H5DuDFqhgUBsOa4nluUNj2AYHSNtq/kAoLF9ARb63u+h4Qe14LZtrXPptxA9AaEoseK3CaMPDamfkN8GzznAb49ijr+G0XZAW5VBZxIAAAAAElFTkSuQmCC"
+                                data-filename="image.png" style="width: 42.4px; height: 36.1647px;"><span style="font-size: 18px;">可以点开编辑器。</span></p>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.</span><span style="font-size: 18px;">&nbsp;</span><span
+                                style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">点击下方的</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAA0CAYAAACuPJf7AAAFnElEQVR4Ae2cO0zjSBjH/+EtXuIhIdEl1JGu4iSnurs6K/pQrK6ItMWmWTqol45rQrES1RakuG5F6turiHRUK6UEkgYh8RAUvJ+rv7NfYudi8vCYteOxNJrxeMb+vv9vXk5sR56fn5+ht65WoKervdPOmQpoyCFoCBpyCCD3vaaPevp3VjsSiTgfdHnEc8gEK3Alps3WtEsfAlvdClbSjCWtyjHPIAtcxk9PTyZUiTXgGj6B2tPTY8KVWPJrJTtPeQJZABPq4+MjHh4ezMA08xj0VlGAUBl6e3vR19dnBqaZx01Fr/YMMkES7snJCY6Pj3F9fa25OigwMDCA8fFxTExMYHBw0AwELr3aoVrL2cohSy9mryXgg4MDxGIx0wEVrbJlzwJSkHqdn59jf38f9/f3mJqaMi2X4ZrH3eqm/BaKRkkvZg8m4MnJSdeGBoRZ22YSIPWZm5vDxcUFLi8vcXt7a46C1JF6ut2UQ6ZBNIxDNYdoDkF6a64AdeLod3V1VYWsAjCvrBQyjWJgC6TB3NwONc3l6Y4SotPNzY05bMsiVTR146VSyGKIgJZ9HbeugNyJqBqqeWXlkKXlMdZb+woIXJU6KocsbmnIokR7sUq4cmXPIMsFdNyeAl50Dg25PQaBLK0hBxJbe0ZryO3pFcjSPoV8iq0PBgyjUVjC1lHrWhfXDRjrRccKp/klGB+2cGqWKCJrGMh+cyxeO3C0hSWjPVtqlV83pfy3a5XmJ1byWEtO205JKMmFLGKFDOK2Iyp24sgUCipO5Ktz+LQnO2s0nfwTKeTwtZXe5nyaUB0JHGQ7nUbDa6O8kn34dxy+6+tW9mvTRhb/G/j/y1qmFX8O34GDXFxPI4cUfv/FjvvFvc1VlN8WUCgwbCC1mcZSvjILO9fjuiCN8kr+R70CNhZzSNsayDZW/4kib563gPwKsLrQoCE4X+RVjvh6Tt7+mITxsV6HFDbanY8XN5CpNoo4Mp9SMN7lUExmMFt/+ur+Icqcnv+oZiD+voD6GTv19g1k1TD9629I4F+UjoD4TK3ez075GnKjhVcngiWidShno1UYdUcsp48jtZJAstrQGjWuBOpPbTmBb5KBG65fU7np5FptiEcOafOWzn/DcTNNug/yUQnlOq+3y4f2nMMythFFrOUhtXJrZc7nAVzZBxzyLKIGkPssP2YAxb9XsW1HCmymLT9wFJF9l0NiJdXkPruysrYt0L59bX/RV2/LT9j39ZzcXI9pvPlrA2UjjaSxahZPfaqsnm11F5cR/WzA+LFqam2ujyPzZRlLC9bFXwLLX9aaNA7blX2xE1H56ir/JuNjK3d3d+ZDabu7u5ifn/eFo0EwYmdnx3w2bmZmxnxqc3R0FHxcl89hy+NBnfgR8OG6E5fDV0dDDgFzDVlDDoECIXBR92QNOQQKhMBF3ZM15BAo4DMX3dwPO7niWU/2wlgnJ7opn7pJUOWXcshioED24mFxVc776Tyik7x4Xq+jG1uVQ6YxNJDG8ic5vmCtt+YKUCeClk9KCOzmNZuXUApZWh8N5O+t/EQC36A/OztT8jJ1c3eCV4Jgqc/e3p75u//Q0BD6+/tN/QS0jIqdeufJv1A0ii2SL1bzEwmlUqn6vnKnhnZzPYLmHzsjIyMYHh6ufjPELVzRTDlkGsYWSMj8yAm/gcGYb9DzBWu+fyuvZ9IImYvEoDDEAk+0Ys8dGxszARM09fL1h2FoOAOHaxrLTdLs1QI5DDBb8VE6BEFTLwny96I0iFbO5VRG6f/JchH2Tgb5rIS8PS+fSGC+3ioKEDIDocqii2nmSYdxq5UnkGmUgBbY1phpvVUUEJACVWLJV6GTZ5DFOIHNfStca1rKhi22DsWSVglX9PQcslyIsQZrVcOeFsj2XDV7ylfXL5nlpSMvXTfsx74DUgJ74Cn8chkAAAAASUVORK5CYII="
+                                data-filename="image.png" style="width: 64.4px; height: 27.676px;"><span style="font-size: 18px;">可以记录当前的任务。</span></p>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;4.</span><span style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">&nbsp;</span><span
+                                style="font-size: 18px;">当然你也可以附带上一个</span><a href="http://#" target="_blank" style="font-size: 18px; background-color: rgb(255, 255, 255);">链接</a><span
+                                style="font-size: 18px;">，</span><span style="font-size: 18px; background-color: rgb(239, 239, 239);">而且你也可以修改这个的颜色用来让你的任务栏更好看。</span></p>
                         <hr>
-                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5.</span><span style="font-size: 18px;">&nbsp;</span><span
-                            style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">当然还没有完成后台，所以记录也白无用。</span><br></p>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5.</span><span style="font-size: 18px;">&nbsp;</span><span
+                                style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">当然还没有完成后台，所以记录也白无用。</span><br></p>
                         <p style="text-align: left;"><br><br></p>
-                      </div>
-              
+                    </div>
+
                     <div class=".col-md-6 .col-md-offset-3" id="summernote"></div>
                     <button type="button" class="btn btn-default btn-sm" id="btnpush">Publish</button>
                 </div>
@@ -206,7 +217,104 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <h2 class="text-center">My task
+                    <button id="eitortask" type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                    </button></h2>
+                <div class="row feature-row center-block text-center">
+                    <div class=".col-md-6 .col-md-offset-3" id="taskcontent">
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.&nbsp;
+                                这里是用来记录我当前需要完成的任务</span></p>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.</span><span style="font-size: 18px;">&nbsp;</span><span
+                                style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">点击上方</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAA6CAYAAAAJO/8DAAAEAklEQVRoBe2bS04bQRCGy8aAecqSlyDv2URZJwdgZy7AMuuEC4QFuUDIGmWVC4RdDpCsvLI4ABISO0sIgcDm4ejv5LeK0vTMENvtmdAtjfox3T31f1M1NFK5MhwOhxLLiEB11IoNRyACMY4QgRggNdPP1S3bZ6dSqeTShUm5gRCCrbEJx3I/dcoTNQC0YR/HWPtMyAUEG+J6fHx8UnPct/ksxyGcV7VadW3UKGlQMoEQBGDc39/Lw8PDqCagWQr3PRuiAWBubk5qtdqoxhgBJa1NBUIYgHB3dye9Xk8uLy9lMBgULkysOAABiHq9Lmtra7K4uOiu+fl5N9UHxQuE4QAvAIzz83MHYnNzU9bX1x1la0SR+rAbL+/s7Exub2+l0Wi4kIeNDCW2td1eIJjEMIFnwCu2trYKD4Li4AGAgJd3cnIiFxcX7pYOGYSTLd5zCD0E4QLSGxsbpYGhRQJAq9VyXn59fS39ft99B6lPz0XbCwQ36SHwDpAua6HtCB1owR8HaEsqiUBIDzU8BDVIl7XQdsDA95CaqFPrSlWZtEAvLlubnpGmywuEi3yuVTYYsBeaoAcX9VkdXiB24v/QB4SsEoEYQi8KiNGe2E09mCWu+KfBnnx/vy2ffqUv3j3qyN7r9DnTvhvEQ3rHB5kwIPTbu8/SnbbijP2DAMmwoVC3gwBptvfl45ts3btHe/Iqe9pUZwT6hjRl50tHdqYqZTKbBwHSO/4g2wc/x7B4V752wnhPkJAZg0TwpRGIQR4kZJrtQ+m0zZML2g0CRCTfwUwzmtUhLUjI5D2YaSCzOqQFAaKFFr0dBEjeg5mGNatDWqBvSDyY6Zct4x/M/mz3dv+HHLabT/aedCdIyEza6GnuF4EYukG+IWU6mEUPMR4SgUQghoDpRg+JQAwB040eEoEYAqb7ojwkLfuQXCIQkvhbe4EwMQ3JJmiXOS2CtkMH9FBTksd4gQAYoSC9EXlmZS2wHVlD0JEGA/oSgRAEamTqIdcT6Y0kXSYwsPn09NQl2y0sLAjyVKFJa9R6EoFwAmiCKhJfkWzC9MYygIGNSMXsdrtydXU1SuIFFHoKdeq64vtFFQDAzZCkdnNz4zbFA9AvS4H9SMPkS0U24urqqiwtLT3xFK0n9d9/egjSoukVyPXU6Y06VytPypJ++KTbCAMUhgNAAABCfmVlRZaXl116d5qHeIFwc0DR+eFoM70RkAhq0uLG3Q9203aEic51xzih2ed4gZA0Fus2NuevIgBj1l5hBbEPwbD9ub+G8H5DuDFqhgUBsOa4nluUNj2AYHSNtq/kAoLF9ARb63u+h4Qe14LZtrXPptxA9AaEoseK3CaMPDamfkN8GzznAb49ijr+G0XZAW5VBZxIAAAAAElFTkSuQmCC"
+                                data-filename="image.png" style="width: 42.4px; height: 36.1647px;"><span style="font-size: 18px;">可以点开编辑器。</span></p>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.</span><span style="font-size: 18px;">&nbsp;</span><span
+                                style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">点击下方的</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAA0CAYAAACuPJf7AAAFnElEQVR4Ae2cO0zjSBjH/+EtXuIhIdEl1JGu4iSnurs6K/pQrK6ItMWmWTqol45rQrES1RakuG5F6turiHRUK6UEkgYh8RAUvJ+rv7NfYudi8vCYteOxNJrxeMb+vv9vXk5sR56fn5+ht65WoKervdPOmQpoyCFoCBpyCCD3vaaPevp3VjsSiTgfdHnEc8gEK3Alps3WtEsfAlvdClbSjCWtyjHPIAtcxk9PTyZUiTXgGj6B2tPTY8KVWPJrJTtPeQJZABPq4+MjHh4ezMA08xj0VlGAUBl6e3vR19dnBqaZx01Fr/YMMkES7snJCY6Pj3F9fa25OigwMDCA8fFxTExMYHBw0AwELr3aoVrL2cohSy9mryXgg4MDxGIx0wEVrbJlzwJSkHqdn59jf38f9/f3mJqaMi2X4ZrH3eqm/BaKRkkvZg8m4MnJSdeGBoRZ22YSIPWZm5vDxcUFLi8vcXt7a46C1JF6ut2UQ6ZBNIxDNYdoDkF6a64AdeLod3V1VYWsAjCvrBQyjWJgC6TB3NwONc3l6Y4SotPNzY05bMsiVTR146VSyGKIgJZ9HbeugNyJqBqqeWXlkKXlMdZb+woIXJU6KocsbmnIokR7sUq4cmXPIMsFdNyeAl50Dg25PQaBLK0hBxJbe0ZryO3pFcjSPoV8iq0PBgyjUVjC1lHrWhfXDRjrRccKp/klGB+2cGqWKCJrGMh+cyxeO3C0hSWjPVtqlV83pfy3a5XmJ1byWEtO205JKMmFLGKFDOK2Iyp24sgUCipO5Ktz+LQnO2s0nfwTKeTwtZXe5nyaUB0JHGQ7nUbDa6O8kn34dxy+6+tW9mvTRhb/G/j/y1qmFX8O34GDXFxPI4cUfv/FjvvFvc1VlN8WUCgwbCC1mcZSvjILO9fjuiCN8kr+R70CNhZzSNsayDZW/4kib563gPwKsLrQoCE4X+RVjvh6Tt7+mITxsV6HFDbanY8XN5CpNoo4Mp9SMN7lUExmMFt/+ur+Icqcnv+oZiD+voD6GTv19g1k1TD9629I4F+UjoD4TK3ez075GnKjhVcngiWidShno1UYdUcsp48jtZJAstrQGjWuBOpPbTmBb5KBG65fU7np5FptiEcOafOWzn/DcTNNug/yUQnlOq+3y4f2nMMythFFrOUhtXJrZc7nAVzZBxzyLKIGkPssP2YAxb9XsW1HCmymLT9wFJF9l0NiJdXkPruysrYt0L59bX/RV2/LT9j39ZzcXI9pvPlrA2UjjaSxahZPfaqsnm11F5cR/WzA+LFqam2ujyPzZRlLC9bFXwLLX9aaNA7blX2xE1H56ir/JuNjK3d3d+ZDabu7u5ifn/eFo0EwYmdnx3w2bmZmxnxqc3R0FHxcl89hy+NBnfgR8OG6E5fDV0dDDgFzDVlDDoECIXBR92QNOQQKhMBF3ZM15BAo4DMX3dwPO7niWU/2wlgnJ7opn7pJUOWXcshioED24mFxVc776Tyik7x4Xq+jG1uVQ6YxNJDG8ic5vmCtt+YKUCeClk9KCOzmNZuXUApZWh8N5O+t/EQC36A/OztT8jJ1c3eCV4Jgqc/e3p75u//Q0BD6+/tN/QS0jIqdeufJv1A0ii2SL1bzEwmlUqn6vnKnhnZzPYLmHzsjIyMYHh6ufjPELVzRTDlkGsYWSMj8yAm/gcGYb9DzBWu+fyuvZ9IImYvEoDDEAk+0Ys8dGxszARM09fL1h2FoOAOHaxrLTdLs1QI5DDBb8VE6BEFTLwny96I0iFbO5VRG6f/JchH2Tgb5rIS8PS+fSGC+3ioKEDIDocqii2nmSYdxq5UnkGmUgBbY1phpvVUUEJACVWLJV6GTZ5DFOIHNfStca1rKhi22DsWSVglX9PQcslyIsQZrVcOeFsj2XDV7ylfXL5nlpSMvXTfsx74DUgJ74Cn8chkAAAAASUVORK5CYII="
+                                data-filename="image.png" style="width: 64.4px; height: 27.676px;"><span style="font-size: 18px;">可以记录当前的任务。</span></p>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;4.</span><span style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">&nbsp;</span><span
+                                style="font-size: 18px;">当然你也可以附带上一个</span><a href="http://#" target="_blank" style="font-size: 18px; background-color: rgb(255, 255, 255);">链接</a><span
+                                style="font-size: 18px;">，</span><span style="font-size: 18px; background-color: rgb(239, 239, 239);">而且你也可以修改这个的颜色用来让你的任务栏更好看。</span></p>
+                        <hr>
+                        <p style="text-align: left; line-height: 1.5;"><span style="font-size: 18px;">&nbsp; &nbsp;
+                                &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5.</span><span style="font-size: 18px;">&nbsp;</span><span
+                                style="font-size: 18px;">&nbsp;</span><span style="font-size: 18px;">当然还没有完成后台，所以记录也白无用。</span><br></p>
+                        <p style="text-align: left;"><br><br></p>
+                    </div>
+
+                    <div class=".col-md-6 .col-md-offset-3" id="summernote"></div>
+                    <button type="button" class="btn btn-default btn-sm" id="btnpush">Publish</button>
+                </div>
+            </div>
+           
+            <div class="gray-background">
+                <div class="container">
+                    <div class="row feature-row">
+                        <div class="col-md-6 col-md-push-6 image"><img class="outdent-shadow image-responsive stopped"
+                                src="https://teamemo.com/static/animations/type.gif" width="100%"></div>
+                        <div class="col-md-6 col-md-pull-6 text">
+                            <h2>First class teamwork</h2>
+                            <h3>With realtime-synchronisation</h3>
+                            <div>
+                                <p>Write in parallel on one document.</p>
+                                <p>The written text will be synced in real time with your team members. Ideal for
+                                    creative processes like
+                                    meetings, brainstorming or project planning.</p>
+                                <p>Working together was never so easy and creative.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <footer style="margin-top:50px">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 footer-navigation">
+                    <h3><a href="/" style="display:inline-block">Recently</a></h3>
+                    <p class="links"><a href="index.html">Home</a><b> · </b><a target="_blank" href="publish.html">Publish</a><b>
+                            · </b><a href="share.html">Share</a><b>
+                  
+                </div>
+                <div class="col-md-4 col-sm-6 footer-contacts">
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                        <p><span class="new-line-span">浙江绍兴</span>邮编：1213123</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p> <a href="mailto:info@teamemo.com" target="_blank">email： dasfdas@.com</a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-4 footer-about">
+                    <h4>About the company</h4>
+                    <p>The Teamemo UG (haftungsbeschränkt) is a innovative high technology company with main focus on
+                        knowledge management, founded by two university graduates of the Karlsruher Institute for
+                        Technology (KIT).</p>
+                    <div class="social-links social-icons"><a target="blank" href="https://www.facebook.com/teamemoweb/"><i
+                                class="fa fa-facebook"></i></a><a target="blank" href="https://twitter.com/teamemoweb"><i
+                                class="fa fa-twitter"></i></a></div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
